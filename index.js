@@ -1,7 +1,7 @@
 alert(`
 Hei!
 
-Velkommen til handlelisten din.
+Velkommen til Handleliste-appen din.
 Her kan du få informasjon om hva du må handle, hva du har nok av og hvilke varer du begynner å gå tom for. 
 
 Slik bruker du applikasjonen:
