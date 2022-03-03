@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+
+    <title>Shopping List</title>
+  </head>
+  <body class="container">
+    <h1 class="my-4">Shopping List</h1>
+
+    <section class="row mb-4">
+      <label class="form-label col-auto">
+        Legg til vare
+        <input id="shoppingInput" class="form-control form-control-lg" type="text" name="shopping" />
+      </label>
+      <label class="form-label col-auto">
+        Hvilke shoppingliste vil du legge varen til i?
+        <select id="categorySelect" class="form-select form-select-lg" name="carts">
+          <option value="needMore">Kjøpe mer av</option>
+          <option value="runningOutOf">Ting du begynner å gå tom for</option>
+          <option value="haveEnough">Nok av</option>
+        </select>
+      </label>
+      <label class="form-label col-auto" id="priceInputLabel"
+        >Legg til pris<input class="form-control form-control-lg" type="number" id="priceInput"
+      /></label>
+      <button id="add" class="btn btn-primary btn-lg mb-2 pl-2 col-auto align-self-end" type="submit">Legg til</button>
+    </section>
+
+    <section class="mb-4">
+      <h2>Dette må du kjøpe mer av:</h2>
+      <ul class="list-group" id="needMore"></ul>
+      <p id="needMoreTotal"></p>
+    </section>
+
+    <section class="mb-4">
+      <h2>Dette begynner du å gå tom for i kjøleskapet ditt:</h2>
+      <ul class="list-group" id="runningOutOf"></ul>
+    </section>
+
+    <section>
+      <h2>Dette har du foreløpig nok av:</h2>
+      <ul class="list-group" id="haveEnough"></ul>
+    </section>
+  </body>
+</html>
